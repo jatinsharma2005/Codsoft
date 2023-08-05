@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #F5EFE7;
+
+}
+
+/* navbar start */
+.navbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #0000003b;
+}
+
+.navbar h1 {
+    font-family: "Brolink DEMO";
+    position: relative;
+    margin-left: 15vh;
+    margin-bottom: 0;
+    float: left;
+    font-size: 30px;
+
+}
+
+.navbar ul {
+    text-decoration: none;
+    position: relative;
+    float: right;
+    margin-right: 10vh;
+    margin-bottom: 0;
+    font-size: 16px;
+
+}
+
+.navbar li {
+    text-decoration: none;
+
+    display: inline-block;
+    position: relative;
+    margin: 0 18px;
+    line-height: 50px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #25282c;
+}
+
+.navbar ul ::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar ul :hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* navbar end */
+/* page1 start */
+.page1 {
+    width: auto;
+    height: 90vh;
+}
+
+.page1 h2 {
+    font-family: 'Patua One', cursive;
+    position: absolute;
+    font-size: 7vh;
+    left: 10%;
+    top: 35%;
+    width: 90vh;
+    color: #213555;
+    animation-name: textanimation;
+    animation-duration: 4s;
+}
+
+@keyframes textanimation {
+    0% {
+
+        left: 5%;
+        top: 35%;
+    }
+
+    100% {
+        left: 10%;
+        top: 35%;
+    }
+}
+
+.page1 h2 p {
+    font-size: 6vh;
+    font-family: 'Patua One', cursive;
+    color: #4F709C;
+    margin-bottom: -20px;
+}
+
+.page1 h2 p1 {
+    font-size: 2vh;
+    color: #25282c;
+}
+
+
+
+.button {
+    height: 5vh;
+    width: 20vh;
+    background-color: rgb(47 46 67);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 2px;
+    margin-top: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    animation-name: newsletterform;
+    animation-duration: 4s;
+}
+
+@keyframes newsletterform {
+    0% {
+
+        left: 10%;
+        top: 70%;
+        width: 20vh;
+    }
+
+    100% {
+        left: 10%;
+        width: 20vh;
+        top: 60%;
+    }
+}
+
+.page1 img {
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    animation-name: imganimation;
+    animation-duration: 4s;
+
+}
+
+@keyframes imganimation {
+    0% {
+
+        right: 5%;
+        top: 30%;
+    }
+
+    100% {
+        right: 10%;
+        top: 30%;
+    }
+}
+
+/* page1 end */
+/* page2 start */
+.page2 {
+
+    width: 100%;
+    height: 95vh;
+}
+
+.page2 #About {
+    width: 20vh;
+    position: relative;
+    padding: 15px 0 8px;
+    top: 10vh;
+    left: 10vh;
+    z-index: 99;
+}
+
+#underline {
+    position: absolute;
+    left: 10px;
+    bottom: -5px;
+    width: 12vh;
+    height: 10px;
+    border-radius: 50px;
+    background: #4f709c;
+    z-index: 99;
+}
+
+.animate1 {
+    animation: animate1 4s;
+}
+
+
+@keyframes animate1 {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 120px;
+    }
+}
+
+.page2 .Abouttitle {
+    position: relative;
+    left: 55%;
+    top: -9vh;
+    width: 75vh;
+    margin: 0;
+
+}
+
+.Abouttitle p2 {
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+    font-size: 3.5vh;
+
+
+}
+
+.Abouttitle p2 p3 {
+    position: absolute;
+    margin-top: 5vh;
+    font-family: 'Noto Sans', sans-serif;
+
+    font-size: 2.2vh;
+
+}
+
+#img2 {
+    position: relative;
+    left: 10%;
+    top: 30%;
+
+
+}
+
+.img2animation {
+    animation: img2animation 4s;
+}
+
+
+@keyframes img2animation {
+    0% {
+
+        left: 5%;
+        top: 30%;
+    }
+
+    100% {
+        left: 10%;
+        top: 30%;
+    }
+}
+
+
+.reveal {
+
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* page2 end */
+
+
+/* page3 start */
+
+.page3 {
+
+    width: 100%;
+    height: 95vh;
+
+
+}
+
+.page3 #h3 {
+
+    position: relative;
+    padding: 15px 0 8px;
+    top: 10vh;
+    left: 10vh;
+    z-index: 99;
+
+}
+
+.divapage3 {
+
+    display: inline-block;
+    display: flex;
+    position: relative;
+    width: 95%;
+    justify-content: center;
+    left: 5vh;
+    padding-top: 15vh;
+
+}
+
+.page3 .verticalline {
+    position: relative;
+    top: 13vh;
+    left: -20px;
+    width: 10px;
+    height: 15vh;
+    border-radius: 50px;
+    background: #4f709c;
+    z-index: 99;
+
+}
+
+
+#underline1 {
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    width: 18vh;
+    height: 10px;
+    border-radius: 50px;
+    background: #4f709c;
+    z-index: 99;
+}
+
+.topic1 {
+    position: absolute;
+    width: 30%;
+    left: 20vh;
+}
+
+.topic2 {
+    position: absolute;
+    width: 30%;
+    margin-left: 70vh;
+
+
+}
+
+.topic3 {
+    position: absolute;
+    width: 30%;
+    left: 20vh;
+    margin-top: 30vh;
+
+}
+
+
+.topic4 {
+    position: absolute;
+    width: 30%;
+    margin-left: 70vh;
+    margin-top: 30vh;
+
+}
+
+/* page3 end */
+
+
+.page4 {
+
+    width: 100%;
+    height: 99vh;
+    background-color: #213555;
+
+}
+
+.newsletterform {
+    position: relative;
+    top: 35%;
+    left: 60%;
+    width: 50vh;
+
+    background-color: #213555;
+}
+
+.form {
+    height: 50px;
+    width: 45vh;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(63, 69, 150);
+    padding-left: 30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #fafafa;
+}
+
+.page4 h2 {
+    font-family: 'Patua One', cursive;
+    position: relative;
+    font-size: 10vh;
+    left: 60%;
+    top: 30%;
+    color: #ffffff;
+    width: 70vh;
+    background-color: #213555;
+}
+
+
+
+.page4 h2 p {
+    font-size: 6vh;
+    font-family: 'Patua One', cursive;
+    color: #4F709C;
+    margin-bottom: -20px;
+    background-color: #213555;
+
+}
+
+.page4 .button2 {
+    position: relative;
+    height: 5vh;
+    width: 20vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    padding: 2px;
+    margin-top: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 90%;
+    left: 1%;
+}
+
+.img4 {
+    position: relative;
+    background-color: #213555;
+    bottom: 20vh;
+}
+
+.contitle {
+    position: relative;
+    padding: 0px 0 8px;
+    background-color: #213555;
+    padding-left: 10vh;
+    z-index: 99;
+}
+
+.contact {
+    padding-top: 15px;
+    border-top: solid 0.5px #f5efe74d;
+    position: relative;
+    background-color: #213555;
+    height: 6vh;
+    color: #ffffff;
+}
+
+.contact h3 {
+    position: relative;
+    background-color: #213555;
+    height: 6vh;
+
+}
+
+
+#underline2 {
+    position: relative;
+    left: 0px;
+    bottom: 2.5vh;
+    width: 12vh;
+    padding-left: 11vh;
+    height: 10px;
+    border-radius: 50px;
+    background: #4f709c;
+    z-index: 99;
+}
+
+.socialmd {
+    padding-top: 20px;
+    margin: 0;
+    background-color: #213555;
+}
+
+.contact ul {
+    position: relative;
+
+    background-color: #213555;
+    position: relative;
+    padding-left: 25vh;
+    padding-bottom: 2vh;
+}
+
+.contact li {
+
+    display: inline-block;
+    position: relative;
+    background-color: #213555;
+    margin-left: 2vh;
+}
+
+.contact li img {
+    width: 3vh;
+    height: 3vh;
+    transition: transform 0.5s;
+
+    background-color: #213555;
+
+}
+
+.tele {
+    margin-left: 90vh;
+
+}
+
+.contact li p {
+
+    transition: transform 0.5s;
+    background-color: #213555;
+
+}
+
+.contact li :hover {
+    transform: translateY(-5px);
+}
